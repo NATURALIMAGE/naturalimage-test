@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NATURALIMAGE – Accueil</title>
+<meta name="description" content="Accueil de NATURALIMAGE : Sébastien Pastor, photographe naturaliste. Découvrez le portfolio, stages, boutique et plus.">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* Ajustements spécifiques pour l'accueil */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+.cards-container .card {
+  flex: 0 0 auto;
+  width: 150px;
+  padding: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.hero {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://i.ibb.co/ynS8SJ9Q/FB-IMG-1773177359454.jpg") center/cover no-repeat;
+  position: relative;
+}
+.hero img {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; border-radius: 0;
+}
+.hero-text h2 { margin: 0 0 10px 0; }
+.hero-text p { margin: 0; font-size: 1.2rem; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>NATURALIMAGE</h1>
+<p>Sébastien Pastor</p>
+<p>Capter la beauté brute de la nature sauvage</p>
+<nav>
+<a href="portfolio.html">Portfolio</a>
+<a href="stages.html">Stages</a>
+<a href="boutique.html">Boutique</a>
+<a href="contact.html">Contact</a>
+<a href="apropos.html">À propos</a>
+</nav>
+</header>
+
+<div class="hero">
+  <div class="hero-text" style="text-align:center; color:white;">
+    <p>Découvrez la beauté de la nature à travers mon objectif</p>
+  </div>
+  <!-- Photo verte -->
+  <img src="https://i.ibb.co/ynS8SJ9Q/FB-IMG-1773177359454.jpg" alt="Photo verte">
+</div>
+
+<!-- Cartes alignées en ligne -->
+<section class="cards-container">
+  <div class="card">
+    <p>Portfolio</p>
+    <a href="portfolio.html"><button>Voir</button></a>
+  </div>
+  <div class="card">
+    <p>Stages</p>
+    <a href="stages.html"><button>Voir</button></a>
+  </div>
+  <div class="card">
+    <p>Boutique</p>
+    <a href="boutique.html"><button>Voir</button></a>
+  </div>
+</section>
+
+<!-- Section À propos simplifiée -->
+<section id="accueil-apropos" style="max-width:1000px; margin:auto; padding:40px 20px;">
+<h2>À propos</h2>
+<p>Je suis spécialisé dans la photographie de la faune et de la flore sauvages avec une approche immersive et respectueuse de l'environnement. Chaque image raconte une histoire, un instant sauvage capturé avec patience.</p>
+<p><a href="apropos.html">En savoir plus</a></p>
+</section>
+
+<footer style="text-align:center; padding:20px; background:#020617;">
+© 2026 NATURALIMAGE (Sébastien Pastor)
+</footer>
+
+<!-- Bouton retour en haut -->
+<button id="backToTop" title="Retour en haut">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
